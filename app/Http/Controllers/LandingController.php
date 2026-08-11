@@ -21,13 +21,14 @@ class LandingController extends Controller
         ];
 
         $kategori = [
-            'Perkebunan',
-            'Keadaan Geografi',
-            'Data Sektoral',
-            'Matriks Data',
-            'Agama dan Sosial Lainnya',
-            'Perikanan'
-        ];
+            ['nama' => 'Perkebunan', 'deskripsi' => 'Data luas dan produksi kebun', 'gambar' => 'image/perkebunan.jpg'],
+            ['nama' => 'keadaan geografi', 'deskripsi' => 'Data luas dan produksi kebun', 'gambar' => 'image/geografis.jpg'],
+            ['nama' => 'data sektoral', 'deskripsi' => 'Data luas dan produksi kebun', 'gambar' => 'image/sektoral.jpg'],
+            ['nama' => 'matriks data', 'deskripsi' => 'Data luas dan produksi kebun', 'gambar' => 'image/matriks.jpg'],
+            ['nama' => 'agama dan sosial lainnya', 'deskripsi' => 'Data luas dan produksi kebun', 'gambar' => 'image/agama.jpg'],
+            ['nama' => 'Perikanan', 'deskripsi' => 'Data luas dan produksi kebun', 'gambar' => 'image/perikanan.jpg'],
+            ];
+        
 
         return view('landing.index', compact('statistik', 'kategori'));
     }
